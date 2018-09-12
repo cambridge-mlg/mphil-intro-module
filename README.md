@@ -42,6 +42,6 @@ Finally, in order to open the notebook, you need to run the command:
 
 jupyter notebook
 
-which will open a directory tree in jupyter notebooks in your browser. From here, navigate to the online_textbook folder and open the file 'index.ipynb'. From here you should be able to navigate to all of the other notebooks. The home button in each notebook will take you back to this index page.
+which will open a directory tree in jupyter notebooks in your browser. From here, navigate to the mphil-intro-module folder and open the file 'index.ipynb'. From here you should be able to navigate to all of the other notebooks. The home button in each notebook will take you back to this index page.
 
 
