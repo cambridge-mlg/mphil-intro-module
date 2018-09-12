@@ -106,9 +106,10 @@ def set_notebook_preferences(home_button = True):
 
     if (home_button):
         display_string += """
-     <input type="submit" value='Home' class='home_button' onclick='window.location="../index.ipynb"' style='float: right; margin-right: 40px;'>
+     <input type="submit" value='Home' id="initiated" class='home_button' onclick='window.location="../index.ipynb"' style='float: right; margin-right: 40px;'>
     <script>
-    $('.home_button').not(':first').remove();
+    $('.home_button').not('#initiated').remove();
+    $('.home_button').removeAttr('id');
     $(".home_button").insertBefore($("div.cell").first());
     """
 
