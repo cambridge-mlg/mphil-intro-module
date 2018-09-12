@@ -1,0 +1,28 @@
+Suppose the class conditional probabilities $p(\mathbf{x}| \mathcal{C}_k)$ of the datapoints are given by
+
+\begin{align}
+p(\mathbf{x}| y_k = 1) = \frac{1}{(2\pi)^{D/2} |\boldsymbol{\Sigma}|^{1/2}}\text{exp}\bigg\{-\frac{1}{2}(\mathbf{x} - \boldsymbol{\mu}_k)^\top\boldsymbol{\Sigma}^{-1}(\mathbf{x} - \boldsymbol{\mu}_k)\bigg\}
+\end{align}
+
+where $y_k = 1$ denotes denotes membership to the $k^{th}$ class. In other words, the members of a given class are sampled from a multivariate normal, and all such multivariate models share the same covariance matrix $\boldsymbol{\Sigma}$. By Bayes’ rule
+
+\begin{align}
+p(y_k = 1 | \mathbf{x}) = \frac{p(\mathbf{x}| y_k = 1)p(y_k = 1)}{\sum_j p(\mathbf{x}| y_j = 1)p(y_j = 1)}
+\end{align}
+
+In the two-class case this becomes
+
+\begin{align}
+p(y_1 = 1 | \mathbf{x}) = \frac{1}{1 +  \text{exp}(-a)} = \sigma(a),~ a = \text{ln}\bigg(\frac{p(\mathbf{x}| y_1 = 1)p(y_1 = 1)}{p(\mathbf{x}| y_2 = 1)p(y_2 = 1)}\bigg)
+\end{align}
+
+where $\sigma$ is the logistic function. Substituting the expressions for $p(\mathbf{x}| y_k = 1)$ into the expression for $a$, we note that terms which are quadratic in $\mathbf{x}$ will cancel out from the numerator and denominator because they involve the same covariance matrix $\boldsymbol{\Sigma}$. Also, the logarithm will cancel the exponential making $a$ linear with $\mathbf{x}$. It is left as an exercise to show that
+
+\begin{align}
+a &= \mathbf{w}^\top \mathbf{x} + w_0,\\
+\mathbf{w} &= \Sigma^{-1}(\mu_1 - \mu_2),\\
+w_0 &= -\frac{1}{2}\boldsymbol{\mu}_1^\top \Sigma^{-1} \boldsymbol{\mu}_1 + \frac{1}{2}\boldsymbol{\mu}_2^\top \Sigma^{-1} \boldsymbol{\mu}_2 + \text{ln}\frac{p(y_1 = 1)}{p(y_2 = 1)}
+\end{align}
+
+Although the linearity of the decision boundary does not hold in the general case where $\boldsymbol{\Sigma}$ is not identical for all classes, this result provides some motivation in using the logistic function with an argument which is linear in $\mathbf{w}$.
+

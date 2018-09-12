@@ -1,0 +1,45 @@
+.output {
+    font-family: ariel;
+    align-items: normal;
+    text-align: normal;
+}
+
+div.output_svg div { margin : auto; }
+.div.output_area.MathJax_Display{ text-align: center; }
+div.text_cell_render { font-family: sans-serif; }
+
+details {
+    margin: 20px 0px;
+    padding: 0px 10px;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+details div{padding: 20px 30px;}
+details summary{font-size: 18px;}
+
+table {
+     margin: calc(auto + 10px) !important;
+     border: solid !important;
+ }
+
+ th, td {
+    text-align: left !important;
+ }
+
+ .further_box {
+    background-color:rgb(230, 230, 230);
+    border-style: solid;
+    margin: 10px 10px 10px 0px;
+    padding: 10px;
+    left:calc(auto - 20px);
+ }
+
+ .question_box {
+    background-color:rgb(255, 255, 225);
+    border-style: solid;
+    margin: 10px 10px 10px 0px;
+    padding: 10px;
+    left:calc(auto - 20px);
+ }

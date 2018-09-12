@@ -1,0 +1,21 @@
+Since the decays are all independent from each other, the conditional probabilities of each \(x_i\) simplify
+
+$$
+~\\
+p(x_i|\{x\}_{i\neq j}) = p(x_i)\\
+$$
+
+Then, using Bayes’ rule
+
+$$
+~\\
+p(x_1, x_2, … x_N) = p(x_1 | x_2, x_3 … x_N) p(x_2, x_3 … x_N)\\
+~\\
+= p(x_1)p(x_2, x_3 … x_N)\\
+~\\
+=\cdots\\
+~\\
+= \prod^N_{n = 1} p(x_n)~~~\text{by induction}\\
+~\\
+= \frac{1}{Z(\lambda)^N} \text{exp}\bigg(\frac{\sum^N_{n = 1} x_n}{\lambda}\bigg)\\
+$$

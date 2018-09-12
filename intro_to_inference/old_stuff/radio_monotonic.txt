@@ -1,0 +1,7 @@
+Consider a quantity $\mathcal{Q}(x)$ with an extremum at $x^*$, and a monotonic function $f$. The derivative of $f(\mathcal{Q}(x))$ with respect to $x$ is
+
+\begin{align}
+\frac{\partial~ f\big(\mathcal{Q}\big)}{\partial x} = \frac{\partial~ f}{\partial \mathcal{Q}} \frac{\partial~ \mathcal{Q}}{\partial x}.
+\end{align}
+
+So at $x = x^*$, $\frac{\partial~ f\big(\mathcal{Q}\big)}{\partial x} = 0$ and also the signs of $\frac{\partial^2~ f\big(\mathcal{Q}\big)}{\partial x^2}$ and $\frac{\partial^2~ \mathcal{Q}}{\partial x^2}$ are the same, which means that the type of extremum is the same for $\mathcal{Q}$ and $f\big(\mathcal{Q}\big)$.

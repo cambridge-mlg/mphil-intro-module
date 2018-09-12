@@ -1,0 +1,21 @@
+x = np.load('iris_inputs_full.npy')
+y = np.load('iris_labels_full.npy')
+
+no_train = (x.shape[0]*1)//2 # keep 3/4 points in the training and 1/4 in the test sets
+x_train, x_test, y_train, y_test = x[:no_train], x[no_train:], y[:no_train], y[no_train:] # select training/test points
+
+s_len, s_wid = np.linspace(4, 8, 100), np.linspace(1.75, 4.5, 100) # sepal lengths/widths to evaluate class membership
+grid = np.stack(np.meshgrid(s_len, s_wid), axis = -1) # stack into (500, 500, 2) array to do arithmetic
+flat_grid = grid.reshape((-1, 4))
+
+for k in range(1, 50):
+    predictions, rands = kNN_classes(x_train, y_train, x_test, k, p = 2)
+    
+    classifier = KNeighborsClassifier(n_neighbors = k)
+    # Fitting the model
+    classifier.fit(x_train, y_train)
+
+    # Predicting the Test set results
+    y_pred = classifier.predict(x_test)
+    
+    print((predictions == y_test).mean()*100 - accuracy_score(y_test, y_pred)*100, rands)

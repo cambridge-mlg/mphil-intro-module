@@ -1,0 +1,25 @@
+We want to show that for two events A and B
+
+$$\\$$
+$$
+p(A|B)p(B) = p(A, B) = p(B|A)P(A).\\
+$$
+$$\\$$
+
+If we showed the above, then Bayes’ rule comes out instantly:
+
+$$\\$$
+$$
+p(A|B) = \frac{p(A|B)P(B)}{p(A)}.\\
+$$
+$$\\$$
+
+Thus we would like to provide some justification as to why $p(A|B)p(B) = p(A, B)$ holds. The conditional probability $p(A|B)$ denotes “the probability of A occurring given B has occurred”, or equivalently “the fraction of outcomes for which A is true, out of all possible outcomes for which B is true”. Let $n_{ab} \in \{n_{00}, n_{01}, n_{10}, n_{11}\}$ denote the number of (equiprobable) outcomes for which A is true/false and B is true/false depending on the indices: e.g. $n_{01}$ denotes the number of outcomes for which A is false and B is true. Then defining $N = n_{00} + n_{01} + n_{10} + n_{11}$
+
+$$\\$$
+$$
+p(A|B) = \frac{n_{11}}{n_{01} + n_{11}} = \frac{\frac{n_{11}}{N}}{\frac{n_{01} + n_{11}}{N}} = \frac{p(A, B)}{p(B)}\\
+$$
+$$\\$$
+
+through which we obtain the required result from which Bayes’ rule follows. This can readily be extended to situations where more than two events are considered by including more indices.
