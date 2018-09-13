@@ -18,7 +18,7 @@ After you have installed git, open a terminal and navigate to the folder you wis
 
 git clone https://github.com/cambridge-mlg/online_textbook.git
 
-The online_textbook folder should now be cloned into the directory you were in. 
+The online_textbook folder should now be cloned into the directory you were in. The notebooks are about 200MB.
 
 -----
 
@@ -38,7 +38,7 @@ This should return a "Succesfully installed" message.
 
 3. Running and accessing the notebooks
 
-Finally, in order to open the notebook, you need to run the command:
+Finally, in order to open the notebook, you need to run, in the terminal, the command:
 
 jupyter notebook
 
