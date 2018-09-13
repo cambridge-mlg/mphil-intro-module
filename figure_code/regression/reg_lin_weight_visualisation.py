@@ -1,5 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
+import sys
+sys.path.append('../..')
 from helper_functions import *
 from scipy.interpolate import splprep, splev
 import matplotlib
