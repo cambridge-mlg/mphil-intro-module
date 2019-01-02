@@ -16,7 +16,7 @@ https://linode.com/docs/development/version-control/how-to-install-git-on-linux-
 
 After you have installed git, open a terminal and navigate to the folder you wish to clone the repository into. Then type the command:
 
-git clone https://github.com/cambridge-mlg/online_textbook.git
+git clone https://github.com/cambridge-mlg/mphil-intro-module.git
 
 The online_textbook folder should now be cloned into the directory you were in. The notebooks are about 200MB.
 
