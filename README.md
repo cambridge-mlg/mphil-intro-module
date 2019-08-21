@@ -30,9 +30,9 @@ https://www.python.org/downloads/
 
 After you have installed python, you will need to install a few dependencies. To install these, or check that they are already installed, type the following command into your terminal:
 
-python3 -m pip install scipy numpy matplotlib pandas
+python3 -m pip install scipy numpy matplotlib pandas jupyter
 
-This should return a "Succesfully installed" message. 
+This should return a "Successfully installed" message. 
 
 -----
 
