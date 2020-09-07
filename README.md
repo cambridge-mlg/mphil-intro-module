@@ -15,9 +15,9 @@ In order to clone this repository onto your own machine, you will need to instal
 https://linode.com/docs/development/version-control/how-to-install-git-on-linux-mac-and-windows/
 
 After you have installed git, open a terminal and navigate to the folder you wish to clone the repository into. Then type the command:
-
+```
 git clone https://github.com/cambridge-mlg/mphil-intro-module.git
-
+```
 The online_textbook folder should now be cloned into the directory you were in. The notebooks are about 200MB.
 
 -----
@@ -29,9 +29,9 @@ In order to run the notebooks, you will need to install python 3 if you haven't 
 https://www.python.org/downloads/
 
 After you have installed python, you will need to install a few dependencies. To install these, or check that they are already installed, type the following command into your terminal:
-
+```
 python3 -m pip install scipy numpy matplotlib pandas jupyter
-
+```
 This should return a "Successfully installed" message. 
 
 -----
@@ -39,9 +39,9 @@ This should return a "Successfully installed" message.
 3. Running and accessing the notebooks
 
 Finally, in order to open the notebook, you need to run, in the terminal, the command:
-
+```
 jupyter notebook
-
+```
 which will open a directory tree in jupyter notebooks in your browser. From here, navigate to the mphil-intro-module folder and open the file 'index.ipynb'. From here you should be able to navigate to all of the other notebooks. The home button in each notebook will take you back to this index page.
 
 
